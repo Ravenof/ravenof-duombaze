@@ -1,0 +1,133 @@
+/* Bendras šriftas ir fonas */
+body {
+    background-image: url('old_paper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Logotipas ir antraštė */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 5px;
+}
+
+#logo {
+    width: 150px; /* Padidintas logotipas */
+    height: auto;
+}
+
+/* Ravenof Kortų Duomenų Bazė su Foda Display šriftu */
+h2 {
+    text-align: center;
+    font-size: 2.5em; /* Padidintas šrifto dydis */
+    font-family: 'Foda Display', sans-serif;
+    font-weight: bold; /* Paryškintas tekstas */
+    color: #ffffff; /* Baltas tekstas */
+    margin: 5px 0 15px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Pusiau skaidrus fonas */
+    border-radius: 8px; /* Šiek tiek suapvalinti kampai */
+}
+
+/* Filtrų meniu centro išdėstymas */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.filters input, .filters select {
+    width: 200px;
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Kortų konteineris */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Kortos dizainas */
+.card {
+    background-color: #f5f5f5;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Rarity paryškinimas */
+.rarity {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Kortos pavadinimas */
+.card h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Frakcijos ir kainos informacija */
+.card p {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* Kortos vaizdo dydis */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Rarity spalvos */
+.legendinis { color: #e60000; }
+.episkas { color: #800080; }
+.unikalus { color: #0044cc; }
+.magiskas { color: #006600; }
+.paprastas { color: #555555; }
+
+/* Responsyvus dizainas */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 180px;
+        padding: 15px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    .filters input, .filters select {
+        width: 150px;
+    }
+}
